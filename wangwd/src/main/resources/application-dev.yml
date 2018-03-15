@@ -1,0 +1,19 @@
+server:
+  port: 7310
+  session-timeout: 1800
+
+spring:
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+    cache: false
+    excluded-view-names:
+    check-template-location: true
+    mode: LEGACYHTML5
